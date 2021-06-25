@@ -22,8 +22,23 @@ int calcularPrecioDeVenta(int precioCompra,int stock){
     return precioFinal;
 }
 
+void cargaPorArreglos(){
+    //Inicio Punto 2
+    int precioFinal = 0;
+    int precios [5] = {100,150,1600,2000,50};
+    int stock   [5] = {50,100,20,10,200};
+
+    for (int i = 0; i < 5; i++)
+    {
+        precioFinal = calcularPrecioDeVenta(precios[i],stock[i]);
+        printf("%s %d.\n","El precio final del producto ingresado es : $" , precioFinal);
+    }
+}
+
 using namespace std ;
 int main(){
+    //Punto 1
+    /*
     int precioProducto = 0;
     int stock =100;
     printf("Ingrese el precio de compra :");
@@ -32,6 +47,10 @@ int main(){
     //cin >> stock;
     int precioFinal = calcularPrecioDeVenta(precioProducto,stock);
     printf("%s %d.","El precio final del producto ingresado es : $" , precioFinal);
+    */
+    //Punto2
+    cargaPorArreglos();
+
     
     return 0;
 }
