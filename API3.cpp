@@ -1,6 +1,7 @@
 //Librerias
 #include <cmath>
 #include <iostream>
+#include<stdlib.h>
 
 //
 //Funcion que calcula el precio final de un producto
@@ -41,7 +42,7 @@ for (int i = 0; i < 5; i++)
     {
         precioFinal = calcularPrecioDeVenta(precios[i],stock[i]);
         preciosVentas[i] = precioFinal;
-        printf("%s %d. %s %d \n","Producto ",i," Precio de venta : $" , precioFinal);
+        printf("%s %d. %s %d \n","Producto ",i+1," Precio de venta : $" , precioFinal);
     }
 }
     
@@ -90,18 +91,22 @@ int main(){
     //carga de los arreglos por parte del usuario
     for (int i = 0; i < 5; i++)
     {
-        printf("%s %d \n","Datos para el producto ", i);
-        printf("Ingrese el precio de compra :");
-        std :: cin >> precios[i];
-        printf("ingrese stock de producto : ");
+        system("cls");
+        printf("%s %d \n","Datos para el producto ", i+1);
+        printf("Ingrese el precio de compra: ");
+        cin >> precios[i];
+        printf("Ingrese stock de producto: ");
         cin >> stock [i];
     }
+    system("cls");
     //Calculo de los precios de venta
     calcularYMostrar(precios,stock,preciosVentas,precioFinal);
+    printf("\n");
     //Sumatorias de precios de venta compra
     printf("%s %d \n","Total Precios de compra: " ,sumatoriaPreciosCompra(precios));
-    printf("%s %d \n","Total Precios de venta: " ,sumatoriaPreciosfinales(preciosVentas));
     //Sumatoria precio finales
+    printf("%s %d \n","Total Precios de venta: " ,sumatoriaPreciosfinales(preciosVentas));
+    
     
     
     
