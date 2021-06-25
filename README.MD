@@ -1,4 +1,4 @@
-# Consignas
+# Consignas API 3
 1.	Utilizando el Entorno de Desarrollo Integrado (IDE) Visual Studio Code (VSC), creá un proyecto C++ que contenga un método “main”, en el cual deberás codificar el último diagrama de flujos diseñado en el punto uno (1) de la API anterior (por el momento, no debés tener en cuenta la distinción entre productos promocionales). 
 Para producir un código más ordenado y modularizado, deberás crear una función que se llame “calcularPrecioDeVenta”, la cual debe recibir como parámetros de entrada el precio de compra de un producto y su stock correspondiente. Como parámetro de salida la función tiene que devolver el precio de venta.
 En el método “main” se deberá solicitar al usuario que ingrese un número entero (asumir que siempre será entero) correspondiente al precio de compra del producto del que necesita conocer el precio de venta. Luego deberá invocar a la función “calcularPrecioDeVenta” y almacenar en una variable entera el valor que retorne. Asumir que el stock del producto es de 100 unidades.
